@@ -1,10 +1,10 @@
 <template>
   <div class="flex h-screen overflow-hidden">
-    <Sidebar />
+    <!-- <Sidebar /> -->
 
     <!-- Main content -->
     <div class="flex flex-col flex-1 bg-opacity-50 overflow-hidden">
-      <Navbar title="Dashboard" />
+      <!-- <Navbar title="Dashboard" /> -->
 
       <!-- Welcome Banner -->
       <WelcomeBanner @dismissed="hideBanner = true" v-if="!hideBanner" />
