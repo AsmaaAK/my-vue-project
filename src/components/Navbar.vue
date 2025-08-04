@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-center justify-between h-16 px-4 border-b border-gray-200 bg-white">
+  <div class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between h-16 px-4 border-b border-gray-200 bg-white">
     <div class="flex items-center">
       <button class="md:hidden text-gray-500 mr-2" @click="$emit ('toggle-sidebar')">
         <i class="fas fa-bars"></i>

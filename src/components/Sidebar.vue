@@ -1,10 +1,10 @@
-<template>
-  <div class="hidden md:flex md:flex-shrink-0">
-    <div class="flex flex-col w-64 bg-gradient-to-br from-blue-500 via-blue-600 to-blue-700 text-white">
+<template> 
+  <div class="fixed left-0 top-0 bottom-0 z-100 hidden md:flex md:flex-shrink-0">
+    <div class="flex flex-col w-64 bg-gradient-to-br from-gray-600 via-gray-800 to-blue-700 text-white">
       <div class="flex items-center justify-center h-16 px-4 border-b border-blue-400">
         <span class="text-xl font-semibold">EOHM Dashboard</span>
       </div>
-      <div class="flex-grow px-4 py-4 space-y-1 overflow-y-auto">
+      <div class="flex-grow px-4 py-4 space-y-1 overflow-y-auto font-semibold">
         <router-link
           v-for="item in items"
           :key="item.label"

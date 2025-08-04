@@ -14,5 +14,9 @@
             <a href="contact.html" class="px-8 py-5 border-2 text-white bg-orange-600 font-medium rounded-lg hover:bg-white/10 transition-all">Get Involved</a>
         </div>
     </div>
+    <div class="absolute bottom-8 transform -translate-x-1/2 flex flex-col items-center text-white opacity-80 animate-bounce z-10">
+        <span class="text-lg  mb-1">Scroll Down</span>
+        <div class="w-4 h-4 border-r-2 border-b-2 border-white transform rotate-45"></div>
+    </div>
 </section>
 </template>
