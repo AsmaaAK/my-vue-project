@@ -12,6 +12,9 @@ export default defineConfig({
     vueDevTools(),
     tailwindcss(),
   ],
+  server: {
+    open: '/HomeView'  // <-- يفتح هذا المسار عند التشغيل
+  },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
