@@ -15,6 +15,17 @@
       <a href="projects.html" class="px-6 py-3 border-2 border-primary text-primary font-medium rounded-lg hover:bg-primary/10 transition-all">View All Projects</a>
       </div>
     </section>
+   <section class="py-5 bg-white">
+    <div class="container mx-auto px-4">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+    <h2 class="text-3xl md:text-4xl font-bold mb-4">Recent Publications</h2>
+    <p class="text-lg text-gray-600">
+        Stay informed with our latest research, reports, and analysis on humanitarian and social issues.
+        </p>
+    </div>
+    </div>
+    <frecentPublications />
+    </section>
   </div>
 </template>
 
@@ -22,7 +33,8 @@
 // import Navbar from '@/components/Navbar.vue'
 // import Footer from '@/components/Footer.vue'
 import ProjectCard from '@/components/ProjectCard.vue'
-import WelcomeBanner from '@/components/WelcomeBanner.vue';
+import WelcomeBanner from '@/components/WelcomeBanner.vue'
+import frecentPublications from '@/components/frecentPublications.vue'
 
 const projects = [
   {
