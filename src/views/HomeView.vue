@@ -26,15 +26,16 @@
     </div>
     <frecentPublications />
     </section>
+    <OurImpact/>
   </div>
 </template>
 
 <script setup>
-// import Navbar from '@/components/Navbar.vue'
-// import Footer from '@/components/Footer.vue'
+// import OurImpact from '@/components/OurImpact.vue'
 import ProjectCard from '@/components/ProjectCard.vue'
 import WelcomeBanner from '@/components/WelcomeBanner.vue'
 import frecentPublications from '@/components/frecentPublications.vue'
+import OurImpact from '@/components/OurImpact.vue'
 
 const projects = [
   {
