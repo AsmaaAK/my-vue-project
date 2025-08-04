@@ -27,15 +27,16 @@
     <frecentPublications />
     </section>
     <OurImpact/>
+    <Our-Partners/>
   </div>
 </template>
 
 <script setup>
-// import OurImpact from '@/components/OurImpact.vue'
 import ProjectCard from '@/components/ProjectCard.vue'
 import WelcomeBanner from '@/components/WelcomeBanner.vue'
 import frecentPublications from '@/components/frecentPublications.vue'
 import OurImpact from '@/components/OurImpact.vue'
+import OurPartners from '@/components/Our-Partners.vue'
 
 const projects = [
   {
