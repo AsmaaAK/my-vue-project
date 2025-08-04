@@ -1,6 +1,23 @@
-<template> 
-  <div class="fixed left-0 top-0 bottom-0 z-100 hidden md:flex md:flex-shrink-0">
-    <div class="flex flex-col w-64 bg-gradient-to-br from-gray-600 via-gray-800 to-blue-700 text-white">
+<template>
+  <!-- Mobile hamburger button -->
+  <div class="md:hidden fixed top-4 left-4 z-50">
+    <button 
+      @click="isSidebarOpen = !isSidebarOpen"
+      class="p-2 rounded-md text-black focus:outline-none"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
+  </div>
+
+  <!-- Sidebar -->
+  <div 
+    class="fixed left-0 top-0 bottom-0 z-40 transition-all duration-300 ease-in-out"
+    :class="{
+      'transform -translate-x-full md:translate-x-0': !isSidebarOpen,
+      'w-64': isSidebarOpen
+    }"
+  >
+    <div class="flex flex-col h-full w-64 bg-gradient-to-br from-gray-600 via-gray-800 to-blue-700 text-white">
       <div class="flex items-center justify-center h-16 px-4 border-b border-blue-400">
         <span class="text-xl font-semibold">EOHM Dashboard</span>
       </div>
@@ -12,6 +29,7 @@
           class="flex items-center px-2 py-3 text-sm font-medium rounded-md hover:bg-blue-600 hover:text-white"
           :class="item.active ? 'bg-blue-800 text-white' : 'text-blue-200'"
           exact-active-class="bg-blue-800 text-white"
+          @click="isSidebarOpen = false"
         >
           <i :class="item.icon + ' mr-3'"></i>
           {{ item.label }}
@@ -20,9 +38,20 @@
       </div>
     </div>
   </div>
+
+  <!-- Overlay for mobile -->
+  <div 
+    v-if="isSidebarOpen"
+    @click="isSidebarOpen = false"
+    class="fixed inset-0 z-30 bg-black bg-opacity-50 md:hidden"
+  ></div>
 </template>
 
 <script setup>
+import { ref } from 'vue';
+
+const isSidebarOpen = ref(false);
+
 const items = [
   { label: 'Dashboard', icon: 'fas fa-tachometer-alt', to: '/', active: true },
   { label: 'Members', icon: 'fas fa-users', to: '/members', badge: '12 new' },
