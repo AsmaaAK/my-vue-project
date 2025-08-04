@@ -3,7 +3,9 @@
     <Navbar />
     <div class="flex flex-1">
       <Sidebar />
+      <main class="bg-white">
       <router-view />
+      </main>
     </div>
     <Footer />
   </div>
