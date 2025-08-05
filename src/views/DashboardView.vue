@@ -7,7 +7,7 @@
       <!-- <Navbar title="Dashboard" /> -->
 
       <!-- Welcome Banner -->
-      <WelcomeBanner @dismissed="hideBanner = true" v-if="!hideBanner" />
+      <!-- <WelcomeBanner @dismissed="hideBanner = true" v-if="!hideBanner" /> -->
 
       <!-- Stats Cards -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-6 px-4">
